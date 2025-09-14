@@ -1,1 +1,21 @@
 
+/* App.css or index.css */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari/Webkit */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+}
+section{
+    padding-left: 100px;
+    padding-right: 100px;
+}

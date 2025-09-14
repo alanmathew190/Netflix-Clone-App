@@ -7,15 +7,14 @@ import Nav from './components/Nav'
 
 function App() {
   const [trending, setTrending] = useState([]);
- const API_KEY = import.meta.env.VITE_TMDB_KEY;
-
+  const API_KEY = import.meta.env.VITE_TMDB_KEY;
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
-    .then((res) => res.json())
+      .then((res) => res.json())
       .then((data) => setTrending(data.results))
     .catch(console.error)
-  },[])
+  }, [])
 
   return (
     <>
@@ -23,8 +22,8 @@ function App() {
       <Nav />
       <HeroBanner />
       <div className="pt-4">
-        <MovieRow title="Trending Now" movies={trending} />
-      </div>
+          <MovieRow title="Trending Now" movies={trending} />
+        </div>
     </div>
     </>
   )
