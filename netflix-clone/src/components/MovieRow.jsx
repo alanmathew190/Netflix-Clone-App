@@ -21,6 +21,7 @@ function MovieRow({ title, movies }) {
         ))}
           
       </div>
+      
       <PopModal movie={selectedMovie} onClose={() => setSelectedMovie(null)}/>
       </div>
       </section>

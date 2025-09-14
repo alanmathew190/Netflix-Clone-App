@@ -4,7 +4,6 @@ import './App.css'
 import HeroBanner from './components/HeroBanner'
 import MovieRow from './components/MovieRow'
 import Nav from './components/Nav'
-import Reasons from './components/Reasons';
 
 function App() {
   const [trending, setTrending] = useState([]);
@@ -25,7 +24,6 @@ function App() {
       <div className="pt-4">
           <MovieRow title="Trending Now" movies={trending} />
         </div>
-        <Reasons/>
     </div>
     </>
   )
