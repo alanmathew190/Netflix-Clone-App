@@ -17,7 +17,9 @@ function MovieRow({ title, movies }) {
             className="rounded-md hover:scale-105 transition-transform duration-300 cursor-pointer"
             onClick={()=>setSelectedMovie(movie)}
           />
+          
         ))}
+          
       </div>
       <PopModal movie={selectedMovie} onClose={() => setSelectedMovie(null)}/>
       </div>

@@ -5,7 +5,7 @@ function SignIn({ isOpen, onClose}) {
   return (
       <div className="fixed inset-0 flex items-center justify-center z-100 p-2">
           {/* <img src="https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg" className='opacity-100 absolute' alt="" /> */}
-      <div className="bg-gray-900 rounded-xl p-6 max-w-lg  relative  h-auto  w-100">
+      <div className=" rounded-xl p-6 max-w-lg  relative  h-auto  w-100 backdrop-blur-sm bg-black/80 border border-gray-700">
         <button
           className="absolute top-2 right-2 text-gray-400 hover:text-white"
           onClick={onClose}
@@ -13,10 +13,10 @@ function SignIn({ isOpen, onClose}) {
           ✕
               </button>
               <div className='text-white p-5 '>
-                  <h1 className='text-2xl text-white font-semibold '>Sign In</h1>
+                  <h1 className='text-3xl text-white font-semibold '>Sign In</h1>
                   <form action="">
-                      <input type="email" placeholder='Enter your email' className='border-1 border-gray mt-4 w-75'/>
-                      <input type="password" placeholder='Enter your password'className='border-1 border-gray mt-4 w-75' /><br />
+                      <input type="email" placeholder='Enter your email' className='border-1 border-gray mt-4 w-75 p-4'/>
+                      <input type="password" placeholder='Enter your password'className='border-1 border-gray mt-4 w-75 p-4' /><br />
                       <button type='submit' className=' bg-red-600 p-3 rounded mt-4 w-75'>Submit</button>
                   </form>
               </div>
