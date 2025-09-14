@@ -7,9 +7,11 @@ import Nav from './components/Nav'
 
 function App() {
   const [trending, setTrending] = useState([]);
+ const API_KEY = import.meta.env.VITE_TMDB_KEY;
+
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=2afd343931f492051678cf5fd9ff0c8d`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
     .then((res) => res.json())
       .then((data) => setTrending(data.results))
     .catch(console.error)
