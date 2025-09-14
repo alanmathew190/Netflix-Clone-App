@@ -1,9 +1,10 @@
 
-import React, { useState } from 'react'
+import React, { useEffect,useState } from 'react'
 import PopModal from './PopModal'
 
 function MovieRow({ title, movies }) {
   const [selectedMovie, setSelectedMovie] = useState(null)
+  
   return (
     <section className='relative bottom-22'>
        <div className="my-6">
@@ -22,7 +23,8 @@ function MovieRow({ title, movies }) {
           
       </div>
       
-      <PopModal movie={selectedMovie} onClose={() => setSelectedMovie(null)}/>
+        <PopModal movie={selectedMovie} onClose={() => setSelectedMovie(null)} />
+
       </div>
       </section>
   )

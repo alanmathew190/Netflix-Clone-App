@@ -4,10 +4,13 @@ import './App.css'
 import HeroBanner from './components/HeroBanner'
 import MovieRow from './components/MovieRow'
 import Nav from './components/Nav'
+import Reasons from './components/Reasons';
+
 
 function App() {
   const [trending, setTrending] = useState([]);
-  const API_KEY = import.meta.env.VITE_TMDB_KEY;
+  // const [topRated, setTopRated] = useState([])
+   const API_KEY = import.meta.env.VITE_TMDB_KEY;
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
@@ -16,6 +19,7 @@ function App() {
     .catch(console.error)
   }, [])
 
+ 
   return (
     <>
      <div className="bg-black min-h-screen">
@@ -24,6 +28,7 @@ function App() {
       <div className="pt-4">
           <MovieRow title="Trending Now" movies={trending} />
         </div>
+        <Reasons/>
     </div>
     </>
   )
