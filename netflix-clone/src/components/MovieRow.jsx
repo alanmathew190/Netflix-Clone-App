@@ -1,5 +1,5 @@
 
-import React, { useEffect,useState } from 'react'
+import React, { useState } from 'react'
 import PopModal from './PopModal'
 
 function MovieRow({ title, movies }) {
@@ -18,7 +18,6 @@ function MovieRow({ title, movies }) {
             className="rounded-md hover:scale-105 transition-transform duration-300 cursor-pointer mr-10"
             onClick={()=>setSelectedMovie(movie)}
           />
-          
         ))}
           
       </div>
