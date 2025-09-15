@@ -15,7 +15,7 @@ function MovieRow({ title, movies }) {
             key={movie.id}
             src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
             alt={movie.title}
-            className="rounded-md hover:scale-105 transition-transform duration-300 cursor-pointer"
+            className="rounded-md hover:scale-105 transition-transform duration-300 cursor-pointer mr-10"
             onClick={()=>setSelectedMovie(movie)}
           />
           
