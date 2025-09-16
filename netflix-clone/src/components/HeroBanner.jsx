@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import SIgnUp from './SIgnUp';
 
 function HeroBanner() {
@@ -29,18 +28,14 @@ function HeroBanner() {
               placeholder="Enter your Email"
               className="rounded w-95 backdrop-blur-sm bg-black/10  border border-gray-700 py-3 pr-3 pl-3  text-base text-white focus:outline-white"
             />
-            <Router>
+
               <button
                 className="bg-red-600 text-2xl p-4 rounded font-bold hover:bg-red-700 "
-                // onClick={() => setSign1(true)}
+                onClick={() => setSign1(true)}
               >
-                <Link to="/signup">Get Started &gt;</Link>
+                Get Started &gt;
               </button>
 
-              <Routes>
-                <Route path="/signup" element={<SIgnUp />}></Route>
-              </Routes>
-            </Router>
           </form>
         </div>
         <SIgnUp isOpen={sign1} onClose={() => setSign1(false)} />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 function SIgnUp({isOpen,onClose}) {
-    // if (!isOpen) return null;
+    if (!isOpen) return null;
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import SignIn from './SignIn'
-import SIgnUp from './SIgnUp';
 
 function Nav() {
   const [sign, setSign] = useState(false)
