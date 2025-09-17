@@ -29,16 +29,16 @@ function HeroBanner() {
               className="rounded w-95 backdrop-blur-sm bg-black/10  border border-gray-700 py-3 pr-3 pl-3  text-base text-white focus:outline-white"
             />
 
-              <button
-                className="bg-red-600 text-2xl p-4 rounded font-bold hover:bg-red-700 "
-                onClick={() => setSign1(true)}
-              >
-                Get Started &gt;
-              </button>
-
+            <button type='button'
+              className="bg-red-600 text-2xl p-4 rounded font-bold hover:bg-red-700 "
+              onClick={() => setSign1(true)}
+              onSubmit={(e) => e.preventDefault()}
+            >
+              Get Started &gt;
+            </button>
           </form>
         </div>
-        <SIgnUp isOpen={sign1} onClose={() => setSign1(false)} />
+        <SIgnUp isOpen1={sign1} onClose1={() => setSign1(false)} />
       </section>
     </>
   );

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 
-function SIgnUp({isOpen,onClose}) {
-    if (!isOpen) return null;
+function SIgnUp({isOpen1,onClose1}) {
+    if (!isOpen1) return null;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,7 +64,7 @@ function SIgnUp({isOpen,onClose}) {
       <div className="backdrop-blur-lg absolute h-auto top-20 m-auto left-120 w-150 text-center p-20 z-50">
         <button
           className="absolute top-2 right-2 text-gray-400 hover:text-white"
-          onClick={onClose}
+          onClick={onClose1}
         >
           ✕
         </button>
